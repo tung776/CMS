@@ -1,6 +1,0 @@
-columns:
-    title:
-        label: 'Tên Xe'
-        type: text
-        searchable: true
-        sortable: true
