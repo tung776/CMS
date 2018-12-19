@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <button class="bg-grey py-3 px-5 text-white">button</button>
-    <button class="bg-grey py-3 px-5 text-bg-black">button 2</button>
+    <customButton dark></customButton>
   </div>
 </template>
 
@@ -9,14 +8,17 @@
 // @ is an alias to /src
 
 import axios from 'axios'
+import customButton from '@/components/Button'
 
 export default {
   name: 'home',
+  components:{
+    customButton
+  },
   mounted() {
     axios.get('http://localhost:1000/vehicles').then(response => {
       console.log(response.data)
     })
   }
-  
 }
 </script>
