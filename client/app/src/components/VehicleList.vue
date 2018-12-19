@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>Vehicle List</h2>
-        <ul v-for="(item, index) in vehicles_props" :key="index">
+        <ul v-for="(item, index) in vehicles" :key="index">
             <li>
                 {{ item.title }}
             </li>
@@ -11,11 +11,13 @@
 
 <script>
 export default {
-    props: {
-        vehicles_props: {
-            type: Array,
-            default: ()=>[]
+    computed: {
+        vehicles() {
+            return this.$store.getters.allVehicles
         }
+    },
+    mounted() {
+        this.$store.dispatch('getVehicles')//1. gọi tới getVehicles action trong store.js
     }
 }
 </script>
