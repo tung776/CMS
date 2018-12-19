@@ -27,3 +27,4 @@ body {
 }
 @tailwind utilities;
 ============================================
+https://tailwindcss.com/docs/installation/
