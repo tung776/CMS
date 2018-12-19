@@ -55,6 +55,10 @@ let colors = {
   'grey-lighter': '#f1f5f8',
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
+  'red': '#ef5753',
+  'orange': '#de751f',
+  'yellow': '#f2d024',
+  'pink': '#eb5286',
 }
 
 module.exports = {
@@ -880,8 +884,8 @@ module.exports = {
 
   plugins: [
     require('tailwindcss/plugins/container')({
-      // center: true,
-      // padding: '1rem',
+      center: true,
+      padding: '1rem',
     }),
   ],
 

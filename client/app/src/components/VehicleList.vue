@@ -2,7 +2,7 @@
     <div>
         <h2>Vehicle List</h2>
         <ul v-for="(item, index) in vehicles" :key="index">
-            <li>
+            <li class="text-black">
                 {{ item.title }}
             </li>
         </ul>
