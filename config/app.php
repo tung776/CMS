@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost:1000',
+    'url' => 'http://locahost:3000',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'key' => '6f03XQsSmRFttm9k7rK8fPAOWfmiA2Z8',
+    'key' => 'C1oSItTuEjQxHrCHS4rJvKSjHEdXvOK4',
 
     'cipher' => 'AES-256-CBC',
 
