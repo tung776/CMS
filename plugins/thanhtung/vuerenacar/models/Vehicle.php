@@ -8,6 +8,14 @@ use Model;
 class Vehicle extends Model
 {
     use \October\Rain\Database\Traits\Validation;
+    /* Relations */
+    public $belongsToMany = [
+        'locations'=>[
+            'locations'=> 'thanhtung\vuerenacar\Location',
+            'table'=>'thanhtung_vuerenacar_vehicles_locations',
+            'order'=>'title'
+        ]
+    ];
     
 
     /**
