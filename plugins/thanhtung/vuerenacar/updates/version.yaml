@@ -3,3 +3,6 @@
 1.0.2:
     - 'Created table thanhtung_vuerenacar_vehicles'
     - builder_table_create_thanhtung_vuerenacar_vehicles.php
+1.0.3:
+    - 'Created table thanhtung_vuerenacar_locations'
+    - builder_table_create_thanhtung_vuerenacar_locations.php

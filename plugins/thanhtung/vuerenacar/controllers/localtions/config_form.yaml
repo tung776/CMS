@@ -1,0 +1,10 @@
+name: Localtions
+form: $/thanhtung/vuerenacar/models/location/fields.yaml
+modelClass: Thanhtung\Vuerenacar\Models\Location
+defaultRedirect: thanhtung/vuerenacar/localtions
+create:
+    redirect: 'thanhtung/vuerenacar/localtions/update/:id'
+    redirectClose: thanhtung/vuerenacar/localtions
+update:
+    redirect: thanhtung/vuerenacar/localtions
+    redirectClose: thanhtung/vuerenacar/localtions
