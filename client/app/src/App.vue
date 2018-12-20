@@ -1,17 +1,22 @@
+/* eslint-disable */
 <template>
-  <div id="app">
-    <div id="nav">      
-      <NavBar/>
+    <div id="app">
+        <div id="nav">
+            <NavBar />
+        </div>
+        <RouterView />
     </div>
-    <router-view/>
-  </div>
 </template>
 
 <script>
-  import NavBar from '@/components/NavBar'
-  export default {
+import NavBar from '@/components/NavBar'
+
+export default {
     components: {
-      NavBar
+        NavBar
+    },
+    mounted() {
+        this.$store.dispatch('getLocations')
     }
-  }
+}
 </script>

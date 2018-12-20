@@ -1,7 +1,10 @@
 <template>
     <div>
         <h2>Vehicle List</h2>
-        <ul v-for="(item, index) in vehicles" :key="index">
+        <ul
+            v-for="(item, index) in vehicles"
+            :key="index"
+        >
             <li class="text-black">
                 {{ item.title }}
             </li>
@@ -10,6 +13,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
     computed: {
         vehicles() {
@@ -17,7 +21,7 @@ export default {
         }
     },
     mounted() {
-        this.$store.dispatch('getVehicles')//1. gọi tới getVehicles action trong store.js
+        this.$store.dispatch('getVehicles') // 1. gọi tới getVehicles action trong store.js
     }
 }
 </script>
