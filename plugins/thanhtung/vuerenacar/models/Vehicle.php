@@ -11,7 +11,7 @@ class Vehicle extends Model
     /* Relations */
     public $belongsToMany = [
         'locations'=>[
-            'locations'=> 'thanhtung\vuerenacar\Location',
+            'thanhtung\vuerenacar\Models\Location',
             'table'=>'thanhtung_vuerenacar_vehicles_locations',
             'order'=>'title'
         ]
